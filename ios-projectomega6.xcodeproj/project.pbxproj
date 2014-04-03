@@ -21,6 +21,7 @@
 		574B8FD618EE1C53007876C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574B8FB818EE1C53007876C4 /* UIKit.framework */; };
 		574B8FDE18EE1C53007876C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 574B8FDC18EE1C53007876C4 /* InfoPlist.strings */; };
 		574B8FE018EE1C53007876C4 /* ios_projectomega6Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B8FDF18EE1C53007876C4 /* ios_projectomega6Tests.m */; };
+		574B8FEA18EE2629007876C4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574B8FE918EE2629007876C4 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		574B8FDB18EE1C53007876C4 /* ios-projectomega6Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-projectomega6Tests-Info.plist"; sourceTree = "<group>"; };
 		574B8FDD18EE1C53007876C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		574B8FDF18EE1C53007876C4 /* ios_projectomega6Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_projectomega6Tests.m; sourceTree = "<group>"; };
+		574B8FE918EE2629007876C4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			files = (
 				574B8FB718EE1C53007876C4 /* CoreGraphics.framework in Frameworks */,
 				574B8FB918EE1C53007876C4 /* UIKit.framework in Frameworks */,
+				574B8FEA18EE2629007876C4 /* Parse.framework in Frameworks */,
 				574B8FB518EE1C53007876C4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +104,7 @@
 		574B8FB318EE1C53007876C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				574B8FE918EE2629007876C4 /* Parse.framework */,
 				574B8FB418EE1C53007876C4 /* Foundation.framework */,
 				574B8FB618EE1C53007876C4 /* CoreGraphics.framework */,
 				574B8FB818EE1C53007876C4 /* UIKit.framework */,
@@ -376,6 +380,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-projectomega6/ios-projectomega6-Prefix.pch";
 				INFOPLIST_FILE = "ios-projectomega6/ios-projectomega6-Info.plist";
@@ -389,6 +397,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-projectomega6/ios-projectomega6-Prefix.pch";
 				INFOPLIST_FILE = "ios-projectomega6/ios-projectomega6-Info.plist";
