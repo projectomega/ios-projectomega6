@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		571202DF18EE2D7700CC2C42 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202DE18EE2D7700CC2C42 /* libz.dylib */; };
+		571202E218EE2D8A00CC2C42 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202E018EE2D8A00CC2C42 /* AudioToolbox.framework */; };
+		571202E318EE2D8A00CC2C42 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202E118EE2D8A00CC2C42 /* CoreLocation.framework */; };
+		571202E918EE2DAE00CC2C42 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202E418EE2DAE00CC2C42 /* MobileCoreServices.framework */; };
+		571202EA18EE2DAE00CC2C42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202E518EE2DAE00CC2C42 /* QuartzCore.framework */; };
+		571202EB18EE2DAE00CC2C42 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202E618EE2DAE00CC2C42 /* Security.framework */; };
+		571202EC18EE2DAE00CC2C42 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202E718EE2DAE00CC2C42 /* StoreKit.framework */; };
+		571202ED18EE2DAE00CC2C42 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202E818EE2DAE00CC2C42 /* SystemConfiguration.framework */; };
 		574B8FB518EE1C53007876C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574B8FB418EE1C53007876C4 /* Foundation.framework */; };
 		574B8FB718EE1C53007876C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574B8FB618EE1C53007876C4 /* CoreGraphics.framework */; };
 		574B8FB918EE1C53007876C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574B8FB818EE1C53007876C4 /* UIKit.framework */; };
@@ -35,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		571202DE18EE2D7700CC2C42 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		571202E018EE2D8A00CC2C42 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		571202E118EE2D8A00CC2C42 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		571202E418EE2DAE00CC2C42 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		571202E518EE2DAE00CC2C42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		571202E618EE2DAE00CC2C42 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		571202E718EE2DAE00CC2C42 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		571202E818EE2DAE00CC2C42 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		574B8FB118EE1C53007876C4 /* ios-projectomega6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-projectomega6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		574B8FB418EE1C53007876C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		574B8FB618EE1C53007876C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +78,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571202E918EE2DAE00CC2C42 /* MobileCoreServices.framework in Frameworks */,
+				571202EA18EE2DAE00CC2C42 /* QuartzCore.framework in Frameworks */,
+				571202EB18EE2DAE00CC2C42 /* Security.framework in Frameworks */,
+				571202EC18EE2DAE00CC2C42 /* StoreKit.framework in Frameworks */,
+				571202ED18EE2DAE00CC2C42 /* SystemConfiguration.framework in Frameworks */,
+				571202E218EE2D8A00CC2C42 /* AudioToolbox.framework in Frameworks */,
+				571202E318EE2D8A00CC2C42 /* CoreLocation.framework in Frameworks */,
 				574B8FB718EE1C53007876C4 /* CoreGraphics.framework in Frameworks */,
+				571202DF18EE2D7700CC2C42 /* libz.dylib in Frameworks */,
 				574B8FB918EE1C53007876C4 /* UIKit.framework in Frameworks */,
 				574B8FEA18EE2629007876C4 /* Parse.framework in Frameworks */,
 				574B8FB518EE1C53007876C4 /* Foundation.framework in Frameworks */,
@@ -104,6 +128,14 @@
 		574B8FB318EE1C53007876C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				571202E418EE2DAE00CC2C42 /* MobileCoreServices.framework */,
+				571202E518EE2DAE00CC2C42 /* QuartzCore.framework */,
+				571202E618EE2DAE00CC2C42 /* Security.framework */,
+				571202E718EE2DAE00CC2C42 /* StoreKit.framework */,
+				571202E818EE2DAE00CC2C42 /* SystemConfiguration.framework */,
+				571202E018EE2D8A00CC2C42 /* AudioToolbox.framework */,
+				571202E118EE2D8A00CC2C42 /* CoreLocation.framework */,
+				571202DE18EE2D7700CC2C42 /* libz.dylib */,
 				574B8FE918EE2629007876C4 /* Parse.framework */,
 				574B8FB418EE1C53007876C4 /* Foundation.framework */,
 				574B8FB618EE1C53007876C4 /* CoreGraphics.framework */,
@@ -468,6 +500,7 @@
 				574B8FE518EE1C53007876C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		574B8FE618EE1C53007876C4 /* Build configuration list for PBXNativeTarget "ios-projectomega6Tests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +509,7 @@
 				574B8FE818EE1C53007876C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
