@@ -15,6 +15,7 @@
 		571202EB18EE2DAE00CC2C42 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202E618EE2DAE00CC2C42 /* Security.framework */; };
 		571202EC18EE2DAE00CC2C42 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202E718EE2DAE00CC2C42 /* StoreKit.framework */; };
 		571202ED18EE2DAE00CC2C42 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202E818EE2DAE00CC2C42 /* SystemConfiguration.framework */; };
+		57480CEA18EF958400E14E90 /* back2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 57480CE918EF958400E14E90 /* back2.gif */; };
 		574B8FB518EE1C53007876C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574B8FB418EE1C53007876C4 /* Foundation.framework */; };
 		574B8FB718EE1C53007876C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574B8FB618EE1C53007876C4 /* CoreGraphics.framework */; };
 		574B8FB918EE1C53007876C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574B8FB818EE1C53007876C4 /* UIKit.framework */; };
@@ -51,6 +52,7 @@
 		571202E618EE2DAE00CC2C42 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		571202E718EE2DAE00CC2C42 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		571202E818EE2DAE00CC2C42 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		57480CE918EF958400E14E90 /* back2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = back2.gif; sourceTree = "<group>"; };
 		574B8FB118EE1C53007876C4 /* ios-projectomega6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-projectomega6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		574B8FB418EE1C53007876C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		574B8FB618EE1C53007876C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57480CE618EF94AE00E14E90 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				57480CE918EF958400E14E90 /* back2.gif */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		574B8FA818EE1C52007876C4 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +164,7 @@
 				574B8FC918EE1C53007876C4 /* ViewController.h */,
 				574B8FCA18EE1C53007876C4 /* ViewController.m */,
 				574B8FCC18EE1C53007876C4 /* Images.xcassets */,
+				57480CE618EF94AE00E14E90 /* Assets */,
 				574B8FBB18EE1C53007876C4 /* Supporting Files */,
 			);
 			path = "ios-projectomega6";
@@ -266,6 +277,7 @@
 			files = (
 				574B8FCD18EE1C53007876C4 /* Images.xcassets in Resources */,
 				574B8FBF18EE1C53007876C4 /* InfoPlist.strings in Resources */,
+				57480CEA18EF958400E14E90 /* back2.gif in Resources */,
 				574B8FC818EE1C53007876C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
