@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITextFieldDelegate>
-@property (strong, nonatomic) IBOutlet UITextField *username;
-@property (strong, nonatomic) IBOutlet UITextField *password;
-- (IBAction)onClickLogin:(UIButton *)sender;
+@interface ViewController : UIViewController
+- (IBAction)onClickUserProfile:(id)sender;
+
 
 @end

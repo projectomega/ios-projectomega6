@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <Parse/Parse.h>
 
 @interface ViewController ()
 
@@ -16,40 +17,39 @@
 
 - (void)viewDidLoad
 {
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"back2.gif"]];
+    // we use this to set a default background image for the home view
+    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"back3.gif"]];
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.username.delegate = self;
-    self.password.delegate = self;
+    
     NSLog(@"I Loaded just fine");
     
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [self.username resignFirstResponder];
-    [self.password resignFirstResponder];
-}
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
--(BOOL) textFieldShouldReturn:(UITextField *)textField{
+/*
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    // We first check to see if the user is already logged in
     
-    if(textField){
-        
-        [textField resignFirstResponder];
-    }
     
-    return NO;
 }
 
-- (IBAction)onClickLogin:(UIButton *)sender {
-    //NSLog(self.username.text);
-    //NSLog(self.password.text);
-    NSLog(@"button pressed");
+*/
+
+- (IBAction)onClickUserProfile:(id)sender {
+    PFUser *currentUser = [PFUser currentUser];
+    if(currentUser){
+        [self performSegueWithIdentifier:@"homeToProfileSegue" sender:nil];
+    }
+    else{
+        
+        [self performSegueWithIdentifier:@"homeToLoginSegue" sender:nil];
+    }
 }
 @end
