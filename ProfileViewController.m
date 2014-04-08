@@ -37,7 +37,7 @@
         
         [NSException raise:NSInvalidArgumentException format:@"user cannot be nil"];
     }
-        NSString *name = currentUser.username;
+        self.ProfileName.text = currentUser.username;
         
         //self.ProfileTitle.text = name;
         [self.ProfilePicture setContentMode:UIViewContentModeScaleToFill];

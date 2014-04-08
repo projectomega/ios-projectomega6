@@ -11,6 +11,7 @@
 @interface ProfileViewController : UIViewController
 - (IBAction)onClickBack:(id)sender;
 - (IBAction)onClickLogOut:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *ProfileName;
 @property (strong, nonatomic) IBOutlet UIImageView *ProfilePicture;
 
 @end
