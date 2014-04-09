@@ -37,8 +37,6 @@
         
         [NSException raise:NSInvalidArgumentException format:@"user cannot be nil"];
     }
-        self.ProfileName.text = currentUser.username;
-        
         //self.ProfileTitle.text = name;
         [self.ProfilePicture setContentMode:UIViewContentModeScaleToFill];
         self.ProfilePicture.layer.borderWidth = 0.5f;
@@ -54,7 +52,12 @@
         [imgView loadInBackground];
         [self.ProfilePicture setImage:imgView.image];
         */
-        
+    
+        self.emailId.text = currentUser.email;
+        self.facebookId.text = [currentUser objectForKey:@"facebookId"];
+        self.ProfileName.text = [currentUser objectForKey:@"displayName"];
+
+    
         PFFile *imgfile = [currentUser objectForKey:@"displayImage"];
         __block UIImage *profilePicture = [[UIImage alloc]init];
         
@@ -102,5 +105,9 @@
 - (IBAction)onClickLogOut:(id)sender {
     [PFUser logOut];
     [self performSegueWithIdentifier:@"profileToHomeSegue" sender:nil];
+}
+- (IBAction)onClickChangePassword:(id)sender {
+    [self performSegueWithIdentifier:@"profileToChangePasswordSegue" sender:nil];
+
 }
 @end

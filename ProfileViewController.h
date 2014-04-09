@@ -13,5 +13,8 @@
 - (IBAction)onClickLogOut:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *ProfileName;
 @property (strong, nonatomic) IBOutlet UIImageView *ProfilePicture;
+@property (strong, nonatomic) IBOutlet UILabel *emailId;
+@property (strong, nonatomic) IBOutlet UILabel *facebookId;
+- (IBAction)onClickChangePassword:(id)sender;
 
 @end

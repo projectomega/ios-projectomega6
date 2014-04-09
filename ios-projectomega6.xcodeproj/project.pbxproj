@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		570EC69B18F2615D00325F91 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570EC69A18F2615D00325F91 /* ProfileViewController.m */; };
+		570EC69E18F5E51C00325F91 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570EC69D18F5E51C00325F91 /* ChangePasswordViewController.m */; };
 		571202DF18EE2D7700CC2C42 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202DE18EE2D7700CC2C42 /* libz.dylib */; };
 		571202E218EE2D8A00CC2C42 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202E018EE2D8A00CC2C42 /* AudioToolbox.framework */; };
 		571202E318EE2D8A00CC2C42 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571202E118EE2D8A00CC2C42 /* CoreLocation.framework */; };
@@ -57,6 +58,8 @@
 /* Begin PBXFileReference section */
 		570EC69918F2615D00325F91 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = ../ProfileViewController.h; sourceTree = "<group>"; };
 		570EC69A18F2615D00325F91 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = ../ProfileViewController.m; sourceTree = "<group>"; };
+		570EC69C18F5E51C00325F91 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
+		570EC69D18F5E51C00325F91 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
 		571202DE18EE2D7700CC2C42 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		571202E018EE2D8A00CC2C42 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		571202E118EE2D8A00CC2C42 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -193,9 +196,11 @@
 				574B8FC318EE1C53007876C4 /* AppDelegate.h */,
 				574B8FC418EE1C53007876C4 /* AppDelegate.m */,
 				574B8FC618EE1C53007876C4 /* Main.storyboard */,
-				57435D4C18F1DFF000B6D587 /* LoginViewController.h */,
+				570EC69C18F5E51C00325F91 /* ChangePasswordViewController.h */,
+				570EC69D18F5E51C00325F91 /* ChangePasswordViewController.m */,
 				570EC69918F2615D00325F91 /* ProfileViewController.h */,
 				570EC69A18F2615D00325F91 /* ProfileViewController.m */,
+				57435D4C18F1DFF000B6D587 /* LoginViewController.h */,
 				57435D4D18F1DFF000B6D587 /* LoginViewController.m */,
 				574B8FC918EE1C53007876C4 /* ViewController.h */,
 				574B8FCA18EE1C53007876C4 /* ViewController.m */,
@@ -349,6 +354,7 @@
 				57435CFA18F1003200B6D587 /* SignUpViewController.m in Sources */,
 				574B8FC118EE1C53007876C4 /* main.m in Sources */,
 				570EC69B18F2615D00325F91 /* ProfileViewController.m in Sources */,
+				570EC69E18F5E51C00325F91 /* ChangePasswordViewController.m in Sources */,
 				57435D4E18F1DFF000B6D587 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
