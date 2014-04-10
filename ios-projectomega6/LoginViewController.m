@@ -77,7 +77,7 @@
                                         if (user) {
                                             UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"Logging In" delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
                                             [alert show];
-                                            [alert dismissWithClickedButtonIndex:0 animated:TRUE];
+                                            [alert dismissWithClickedButtonIndex:0 animated:YES];
                                             [self dismissViewControllerAnimated:YES completion:NULL];
                                         
                                         } else {

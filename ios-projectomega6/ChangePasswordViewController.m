@@ -29,14 +29,39 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.currentPassword.delegate = self;
+    self.nPassword.delegate = self;
+    self.retypeNewPassword.delegate = self;
     PFUser *currentUser = [PFUser currentUser];
     if (!currentUser){
         NSLog(@"This Should Never happen");
         [self performSegueWithIdentifier: @"changePasswordToHomeSegue" sender:nil];
     }
+    self.invalidCount = 0;
     
     
     
+    
+    
+    
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.currentPassword resignFirstResponder];
+    [self.nPassword resignFirstResponder];
+    [self.retypeNewPassword resignFirstResponder];
+}
+
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    
+    if(textField){
+        
+        [textField resignFirstResponder];
+    }
+    
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,11 +87,9 @@
 }
 
 - (IBAction)onClickDone:(id)sender {
-    NSLog(self.currentPassword.text);
-    NSLog(self.nPassword.text);
-    NSLog(self.retypeNewPassword.text);
-    
-    /*
+    //NSLog(self.currentPassword.text);
+    //NSLog(self.nPassword.text);
+    //NSLog(self.retypeNewPassword.text);
     PFUser *currentUser = [PFUser currentUser];
     
     if (![self.nPassword.text isEqualToString:self.retypeNewPassword.text])
@@ -79,20 +102,35 @@
     [PFUser logInWithUsernameInBackground:currentUser.username password:self.currentPassword.text
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
+                                            self.invalidCount = 0;
+                                            [PFUser currentUser].password = self.nPassword.text;
+                                            [[PFUser currentUser] saveInBackground];
                                             UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"Saving New Password" delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
                                             [alert show];
-                                            [alert dismissWithClickedButtonIndex:0 animated:TRUE];
+                                            [alert dismissWithClickedButtonIndex:0 animated:YES];
+                                            [self performSegueWithIdentifier:@"changePasswordToProfileSegue" sender:nil];
                                             //[self dismissViewControllerAnimated:YES completion:NULL];
                                             
                                         } else {
-                                            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Unable to Login" message:@"Invalid Password, Logging out" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                                            self.invalidCount++;
+                                            if(self.invalidCount < 4)
+                                            {
+                                            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Unable to Login" message:@"Invalid Password" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
                                             [alert show];
+                                            }
+                                            else{
+                                                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Invalid Password" message:@"Logging Out" delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
+                                                [alert show];
+                                                [alert dismissWithClickedButtonIndex:0 animated:YES];
+                                                [PFUser logOut];
+                                                [self performSegueWithIdentifier:@"changePasswordToHomeSegue" sender:nil];
+                                            }
                                             
                                         }
                                     }];
     
-    [self performSegueWithIdentifier:@"changePasswordToProfileSegue" sender:nil];
+    
     }
-     */
+    
 }
 @end

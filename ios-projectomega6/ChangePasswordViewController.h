@@ -17,4 +17,6 @@
 - (IBAction)onClickBack:(id)sender;
 - (IBAction)onClickDone:(id)sender;
 
+@property(nonatomic) int invalidCount;
+
 @end
