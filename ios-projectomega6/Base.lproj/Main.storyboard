@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-943" y="-98"/>
+            <point key="canvasLocation" x="-831" y="-54"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="hwn-CJ-HTA">
@@ -121,6 +121,9 @@
                                     <color key="titleColor" red="0.050980396568775177" green="0.031372550874948502" blue="0.011764707043766975" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClickSignUp:" destination="m3W-h2-zQT" eventType="touchUpInside" id="OMN-G0-JV7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0u-88-dWV">
                                 <rect key="frame" x="20" y="253" width="280" height="38"/>
@@ -152,11 +155,68 @@
                         <outlet property="password" destination="jlf-KM-X36" id="SQe-dl-Bfb"/>
                         <outlet property="username" destination="mLC-8k-SZR" id="283-uc-sZf"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="loginToHomeSegue" modalTransitionStyle="crossDissolve" id="X25-FJ-kIE"/>
+                        <segue destination="Fm9-Kg-0O9" kind="modal" identifier="loginToSignUpSegue" modalTransitionStyle="flipHorizontal" id="EMw-QD-oNQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tp9-oB-yYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-429" y="-435"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="gWR-KL-tNo">
+            <objects>
+                <viewController id="Fm9-Kg-0O9" customClass="SignUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OuS-S3-rcV"/>
+                        <viewControllerLayoutGuide type="bottom" id="TBW-zt-V2w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eFG-pS-edp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5M-jQ-4Oi">
+                                <rect key="frame" x="20" y="518" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickBack:" destination="Fm9-Kg-0O9" eventType="touchUpInside" id="MRM-U3-7Ul"/>
+                                    <action selector="onClickBack:" destination="m3W-h2-zQT" eventType="touchUpInside" id="qS9-T6-U5H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cv2-oy-HDp">
+                                <rect key="frame" x="63" y="435" width="195" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Already Signed Up?">
+                                    <color key="titleColor" red="0.050980396570000003" green="0.031372550870000002" blue="0.011764707040000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSignedUp:" destination="Fm9-Kg-0O9" eventType="touchUpInside" id="rE1-Tk-uki"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5J7-ZO-Rgr">
+                                <rect key="frame" x="270" y="518" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="go.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClicklogin:" destination="m3W-h2-zQT" eventType="touchUpInside" id="X3d-mc-Kie"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.02745098248" green="0.98039221759999995" blue="0.88235300780000003" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="m3W-h2-zQT" kind="modal" identifier="signUpToLoginSegue" modalTransitionStyle="crossDissolve" id="Q0R-ab-Y6r"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="signUpToHomeSegue" modalTransitionStyle="crossDissolve" id="lFy-gO-UFH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kv9-dl-0ek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-61" y="-435"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="z9a-10-ETh">
@@ -313,7 +373,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEC-MV-rBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="400"/>
+            <point key="canvasLocation" x="-61" y="394"/>
         </scene>
     </scenes>
     <resources>
@@ -330,7 +390,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="X25-FJ-kIE"/>
+        <segue reference="Q0R-ab-Y6r"/>
         <segue reference="Q4R-Ru-Amf"/>
-        <segue reference="Bps-sI-PQV"/>
     </inferredMetricsTieBreakers>
 </document>

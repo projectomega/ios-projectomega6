@@ -88,6 +88,10 @@
     
 }
 
+- (IBAction)onClickSignUp:(id)sender {
+    [self performSegueWithIdentifier:@"loginToSignUpSegue" sender:nil];
+}
+
 - (IBAction)onClickFbLogin:(id)sender {
 }
 - (IBAction)onClickBack:(id)sender {

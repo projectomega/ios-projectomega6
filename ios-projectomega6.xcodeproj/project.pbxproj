@@ -43,6 +43,7 @@
 		574B8FDE18EE1C53007876C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 574B8FDC18EE1C53007876C4 /* InfoPlist.strings */; };
 		574B8FE018EE1C53007876C4 /* ios_projectomega6Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B8FDF18EE1C53007876C4 /* ios_projectomega6Tests.m */; };
 		574B8FEA18EE2629007876C4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574B8FE918EE2629007876C4 /* Parse.framework */; };
+		57BFD21018F874C100F087F7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BFD20F18F874C100F087F7 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		574B8FDD18EE1C53007876C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		574B8FDF18EE1C53007876C4 /* ios_projectomega6Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_projectomega6Tests.m; sourceTree = "<group>"; };
 		574B8FE918EE2629007876C4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		57BFD20F18F874C100F087F7 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				571202E218EE2D8A00CC2C42 /* AudioToolbox.framework in Frameworks */,
 				571202E318EE2D8A00CC2C42 /* CoreLocation.framework in Frameworks */,
 				574B8FB718EE1C53007876C4 /* CoreGraphics.framework in Frameworks */,
+				57BFD21018F874C100F087F7 /* FacebookSDK.framework in Frameworks */,
 				571202DF18EE2D7700CC2C42 /* libz.dylib in Frameworks */,
 				574B8FB918EE1C53007876C4 /* UIKit.framework in Frameworks */,
 				574B8FEA18EE2629007876C4 /* Parse.framework in Frameworks */,
@@ -173,6 +176,7 @@
 		574B8FB318EE1C53007876C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				57BFD20F18F874C100F087F7 /* FacebookSDK.framework */,
 				571202E418EE2DAE00CC2C42 /* MobileCoreServices.framework */,
 				571202E518EE2DAE00CC2C42 /* QuartzCore.framework */,
 				571202E618EE2DAE00CC2C42 /* Security.framework */,

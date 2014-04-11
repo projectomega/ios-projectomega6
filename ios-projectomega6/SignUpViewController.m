@@ -7,6 +7,7 @@
 //
 
 #import "SignUpViewController.h"
+#import <Parse/Parse.h>
 
 @interface SignUpViewController ()
 
@@ -27,6 +28,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser)
+    {
+        NSLog(@"This should never show up if the user is already logged in");
+        [self performSegueWithIdentifier: @"signUpToHomeSegue" sender:nil];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,4 +55,10 @@
 }
 */
 
+- (IBAction)onClickBack:(id)sender {
+    [self performSegueWithIdentifier:@"signUpToLoginSegue" sender:nil];
+}
+- (IBAction)onClickSignedUp:(id)sender {
+    [self performSegueWithIdentifier:@"signUpToLoginSegue" sender:nil];
+}
 @end

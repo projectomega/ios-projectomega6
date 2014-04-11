@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *username;
 @property (strong, nonatomic) IBOutlet UITextField *password;
 - (IBAction)onClicklogin:(id)sender;
+- (IBAction)onClickSignUp:(id)sender;
 
 - (IBAction)onClickFbLogin:(id)sender;
 

@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SignUpViewController : UIViewController
+- (IBAction)onClickBack:(id)sender;
+
+- (IBAction)onClickSignedUp:(id)sender;
 
 @end
