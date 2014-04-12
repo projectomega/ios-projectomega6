@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface LoginViewController : UIViewController <UITextFieldDelegate>
+
 - (IBAction)onClickBack:(id)sender;
 
+@property (nonatomic, retain) PFUser *currentUser;
 @property (strong, nonatomic) IBOutlet UITextField *username;
 @property (strong, nonatomic) IBOutlet UITextField *password;
 - (IBAction)onClicklogin:(id)sender;

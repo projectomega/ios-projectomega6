@@ -44,6 +44,11 @@
 		574B8FE018EE1C53007876C4 /* ios_projectomega6Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B8FDF18EE1C53007876C4 /* ios_projectomega6Tests.m */; };
 		574B8FEA18EE2629007876C4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574B8FE918EE2629007876C4 /* Parse.framework */; };
 		57BFD21018F874C100F087F7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BFD20F18F874C100F087F7 /* FacebookSDK.framework */; };
+		57BFD21218F879ED00F087F7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BFD21118F879ED00F087F7 /* AdSupport.framework */; };
+		57BFD21418F879F600F087F7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BFD21318F879F600F087F7 /* Social.framework */; };
+		57BFD21618F87A0300F087F7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BFD21518F87A0300F087F7 /* Accounts.framework */; };
+		57BFD21818F87A1900F087F7 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BFD21718F87A1900F087F7 /* libsqlite3.0.dylib */; };
+		57BFD21E18F8FCC500F087F7 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BFD21D18F8FCC500F087F7 /* UIView+Toast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +108,12 @@
 		574B8FDF18EE1C53007876C4 /* ios_projectomega6Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_projectomega6Tests.m; sourceTree = "<group>"; };
 		574B8FE918EE2629007876C4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		57BFD20F18F874C100F087F7 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		57BFD21118F879ED00F087F7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		57BFD21318F879F600F087F7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		57BFD21518F87A0300F087F7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		57BFD21718F87A1900F087F7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		57BFD21C18F8FCC500F087F7 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		57BFD21D18F8FCC500F087F7 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +121,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57BFD21818F87A1900F087F7 /* libsqlite3.0.dylib in Frameworks */,
+				57BFD21618F87A0300F087F7 /* Accounts.framework in Frameworks */,
+				57BFD21418F879F600F087F7 /* Social.framework in Frameworks */,
+				57BFD21218F879ED00F087F7 /* AdSupport.framework in Frameworks */,
 				571202E918EE2DAE00CC2C42 /* MobileCoreServices.framework in Frameworks */,
 				571202EA18EE2DAE00CC2C42 /* QuartzCore.framework in Frameworks */,
 				571202EB18EE2DAE00CC2C42 /* Security.framework in Frameworks */,
@@ -176,6 +191,10 @@
 		574B8FB318EE1C53007876C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				57BFD21718F87A1900F087F7 /* libsqlite3.0.dylib */,
+				57BFD21518F87A0300F087F7 /* Accounts.framework */,
+				57BFD21318F879F600F087F7 /* Social.framework */,
+				57BFD21118F879ED00F087F7 /* AdSupport.framework */,
 				57BFD20F18F874C100F087F7 /* FacebookSDK.framework */,
 				571202E418EE2DAE00CC2C42 /* MobileCoreServices.framework */,
 				571202E518EE2DAE00CC2C42 /* QuartzCore.framework */,
@@ -221,6 +240,8 @@
 		574B8FBB18EE1C53007876C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				57BFD21C18F8FCC500F087F7 /* UIView+Toast.h */,
+				57BFD21D18F8FCC500F087F7 /* UIView+Toast.m */,
 				574B8FBC18EE1C53007876C4 /* ios-projectomega6-Info.plist */,
 				574B8FBD18EE1C53007876C4 /* InfoPlist.strings */,
 				574B8FC018EE1C53007876C4 /* main.m */,
@@ -353,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57BFD21E18F8FCC500F087F7 /* UIView+Toast.m in Sources */,
 				574B8FCB18EE1C53007876C4 /* ViewController.m in Sources */,
 				574B8FC518EE1C53007876C4 /* AppDelegate.m in Sources */,
 				57435CFA18F1003200B6D587 /* SignUpViewController.m in Sources */,
